@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>mask</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="https://github.com/gabceb/jquery-browser-plugin/blob/master/dist/jquery.browser.js"></script> -->
+  <script type="text/javascript" src="./mask.js"></script>
+</head>
+<body>
+<!-- From this Fiddle: http://jsfiddle.net/HDakN/ -->
+<!-- <input type="text" id="phone" placeholder="+(998)__-___-__-__" /> -->
+<input type="text" id="phone" />
+<script type="text/javascript">
+     $("#phone").inputmask({"mask": "+(\\9\\9\\8)99-999-99-99",  "placeholder": '+(998)__-___-__-__' });
+     $("input").attr('autocomplete', 'off');
+</script>
+</body>
+</html>
